@@ -20,5 +20,17 @@ public class StringTest {
         assertThat(result_2).containsExactly("1");
     }
 
+    @Test
+    public void substringTest(){
+        // given
+        String target = "(1,2)";
+
+        // when
+        String result = target.substring(1,4);
+
+        // then
+        assertThat(result).isEqualTo("1,2");
+    }
+
 
 }
